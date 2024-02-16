@@ -8,3 +8,5 @@ diffvg.egg-info
 dist
 __pycache__
 .DS_Store
+
+.vscode

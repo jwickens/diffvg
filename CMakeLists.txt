@@ -6,9 +6,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 if(WIN32)
-    find_package(Python 3.6 COMPONENTS Development REQUIRED)
+    find_package(Python 3.11 COMPONENTS Interpreter Development REQUIRED)
 else()
-    find_package(Python 3.7 COMPONENTS Development REQUIRED)
+    find_package(Python 3.11 COMPONENTS Interpreter Development REQUIRED)
 endif()
 add_subdirectory(pybind11)
 
@@ -16,7 +16,7 @@ option(DIFFVG_CUDA "Build diffvg with GPU code path?" ON)
 
 if(DIFFVG_CUDA)
     message(STATUS "Build with CUDA support")
-    find_package(CUDA 10 REQUIRED)
+    find_package(CUDA 11 REQUIRED)
     set(CMAKE_CUDA_STANDARD 11)
     if(NOT WIN32)
         # Hack: for some reason the line above doesn't work on some Linux systems.
