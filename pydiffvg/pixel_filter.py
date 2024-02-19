@@ -1,5 +1,4 @@
 import torch
-import pydiffvg
 
 class PixelFilter:
     def __init__(self,

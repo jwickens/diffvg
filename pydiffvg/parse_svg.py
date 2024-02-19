@@ -1,11 +1,8 @@
 import torch
 import xml.etree.ElementTree as etree
 import numpy as np
-import diffvg
 import os
 import pydiffvg
-import svgpathtools
-import svgpathtools.parser
 import re
 import warnings
 import cssutils

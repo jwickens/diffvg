@@ -2,11 +2,9 @@ import json
 import copy
 import xml.etree.ElementTree as etree
 from xml.dom import minidom
-import warnings
 import torch
 import numpy as np
 import re
-import sys
 import pydiffvg
 import math
 from collections import namedtuple

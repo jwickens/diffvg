@@ -1,4 +1,3 @@
-import pydiffvg
 import torch
 
 class LinearGradient:
